@@ -27,4 +27,10 @@
 	 <constructor-arg value="${db.name}"></constructor-arg>
 	</bean>
 	
+	<bean id="userDao" class="com.kingdee.dao.UserDao">
+     <constructor-arg ref="mongo"></constructor-arg>
+	 <constructor-arg ref="morphia"></constructor-arg>
+	 <constructor-arg value="${db.name}"></constructor-arg>
+	</bean>
+	
 </beans>
